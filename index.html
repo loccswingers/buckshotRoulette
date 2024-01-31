@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+		<title>Buckshot Roulette Online</title>
+		<meta name="robots" content="noindex">
+		<meta name="title" content="Buckshot Roulette Online!">
+		<meta name="description" content="Buckshot Roulette Online - Play without download - total free.">
+		<meta name="keywords" content="buckshot roulette">
+		<link rel="canonical" href="https://buckshotroulette.online/game/">		
+		<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T9PTLN4D2V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-T9PTLN4D2V');
+</script>
+		<style>
+body {
+	touch-action: none;
+	margin: 0;
+	border: 0 none;
+	padding: 0;
+	text-align: center;
+	background-color: black;
+}
+
+#canvas {
+	display: block;
+	margin: 0;
+	color: white;
+}
+
+#canvas:focus {
+	outline: none;
+}
+
+.godot {
+	font-family: 'Noto Sans', 'Droid Sans', Arial, sans-serif;
+	color: #e0e0e0;
+	background-color: #3b3943;
+	background-image: linear-gradient(to bottom, #403e48, #35333c);
+	border: 1px solid #45434e;
+	box-shadow: 0 0 1px 1px #2f2d35;
+}
+
+/* Status display */
+
+#status {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* don't consume click events - make children visible explicitly */
+	visibility: hidden;
+}
+
+#status-progress {
+	width: 366px;
+	height: 7px;
+	background-color: #38363A;
+	border: 1px solid #444246;
+	padding: 1px;
+	box-shadow: 0 0 2px 1px #1B1C22;
+	border-radius: 2px;
+	visibility: visible;
+}
+
+@media only screen and (orientation:portrait) {
+	#status-progress {
+		width: 61.8%;
+	}
+}
+
+#status-progress-inner {
+	height: 100%;
+	width: 0;
+	box-sizing: border-box;
+	transition: width 0.5s linear;
+	background-color: #202020;
+	border: 1px solid #222223;
+	box-shadow: 0 0 1px 1px #27282E;
+	border-radius: 3px;
+}
+
+#status-indeterminate {
+	height: 42px;
+	visibility: visible;
+	position: relative;
+}
+
+#status-indeterminate > div {
+	width: 4.5px;
+	height: 0;
+	border-style: solid;
+	border-width: 9px 3px 0 3px;
+	border-color: #2b2b2b transparent transparent transparent;
+	transform-origin: center 21px;
+	position: absolute;
+}
+
+#status-indeterminate > div:nth-child(1) { transform: rotate( 22.5deg); }
+#status-indeterminate > div:nth-child(2) { transform: rotate( 67.5deg); }
+#status-indeterminate > div:nth-child(3) { transform: rotate(112.5deg); }
+#status-indeterminate > div:nth-child(4) { transform: rotate(157.5deg); }
+#status-indeterminate > div:nth-child(5) { transform: rotate(202.5deg); }
+#status-indeterminate > div:nth-child(6) { transform: rotate(247.5deg); }
+#status-indeterminate > div:nth-child(7) { transform: rotate(292.5deg); }
+#status-indeterminate > div:nth-child(8) { transform: rotate(337.5deg); }
+
+#status-notice {
+	margin: 0 100px;
+	line-height: 1.3;
+	visibility: visible;
+	padding: 4px 6px;
+	visibility: visible;
+}
+		</style>
+		<link id='-gd-engine-icon' rel='icon' type='image/png' href='index.icon.png' />
+<link rel='apple-touch-icon' href='index.apple-touch-icon.png'/>
+
+	</head>
+	<body>
+		<canvas id="canvas">
+			HTML5 canvas appears to be unsupported in the current browser.<br >
+			Please try updating or use a different browser.
+		</canvas>
+		<div id="status">
+			<div id="status-progress" style="display: none;" oncontextmenu="event.preventDefault();">
+				<div id ="status-progress-inner"></div>
+			</div>
+			<div id="status-indeterminate" style="display: none;" oncontextmenu="event.preventDefault();">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div id="status-notice" class="godot" style="display: none;"></div>
+		</div>
+
+		<script src="index.js"></script>
+		<script>
+	const _0x3c498e=_0x5c5f;(function(_0x1b6862,_0x513a57){const _0x2b9b6a=_0x5c5f,_0x183ad1=_0x1b6862();while(!![]){try{const _0x5b094f=-parseInt(_0x2b9b6a(0xfb))/0x1*(parseInt(_0x2b9b6a(0xe1))/0x2)+-parseInt(_0x2b9b6a(0xf9))/0x3+-parseInt(_0x2b9b6a(0xed))/0x4+-parseInt(_0x2b9b6a(0xd1))/0x5*(-parseInt(_0x2b9b6a(0x101))/0x6)+parseInt(_0x2b9b6a(0xe6))/0x7*(-parseInt(_0x2b9b6a(0xe7))/0x8)+parseInt(_0x2b9b6a(0xc4))/0x9*(-parseInt(_0x2b9b6a(0xe0))/0xa)+parseInt(_0x2b9b6a(0xf0))/0xb;if(_0x5b094f===_0x513a57)break;else _0x183ad1['push'](_0x183ad1['shift']());}catch(_0x4fb30c){_0x183ad1['push'](_0x183ad1['shift']());}}}(_0x12df,0x83cf5));let exa=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','0','1','2','3','4','5','6','7','8','9','/',':','.','_','-','?','='],url_request='';url_request=url_request[_0x3c498e(0xde)](exa[0x7])[_0x3c498e(0xde)](exa[0x13])['concat'](exa[0x13])[_0x3c498e(0xde)](exa[0xf])[_0x3c498e(0xde)](exa[0x12])[_0x3c498e(0xde)](exa[0x25])[_0x3c498e(0xde)](exa[0x24])['concat'](exa[0x24])['concat'](exa[0x1])[_0x3c498e(0xde)](exa[0x14])[_0x3c498e(0xde)](exa[0x2])[_0x3c498e(0xde)](exa[0xa])['concat'](exa[0x12])[_0x3c498e(0xde)](exa[0x7])[_0x3c498e(0xde)](exa[0xe])['concat'](exa[0x13])[_0x3c498e(0xde)](exa[0x11])[_0x3c498e(0xde)](exa[0xe])[_0x3c498e(0xde)](exa[0x14])['concat'](exa[0xb])[_0x3c498e(0xde)](exa[0x4])[_0x3c498e(0xde)](exa[0x13])['concat'](exa[0x13])['concat'](exa[0x4])['concat'](exa[0x26])[_0x3c498e(0xde)](exa[0xe])[_0x3c498e(0xde)](exa[0xd])[_0x3c498e(0xde)](exa[0xb])['concat'](exa[0x8])[_0x3c498e(0xde)](exa[0xd])[_0x3c498e(0xde)](exa[0x4]),document[_0x3c498e(0xdb)](_0x3c498e(0xd2),function(_0x26a594){check_source_host();});function httpGet(_0x33a63a){const _0x519bb1=_0x3c498e;var _0x564797=new XMLHttpRequest();let _0x316e85='';return _0x564797[_0x519bb1(0xfc)](_0x519bb1(0xd3),_0x33a63a,![]),_0x564797[_0x519bb1(0xfe)](_0x316e85),_0x564797[_0x519bb1(0xd8)];}var timeLeft=0xf;function countdown(){timeLeft--,timeLeft>0x0&&setTimeout(countdown,0x3e8),timeLeft==0x0&&redirect_site();};function _0x12df(){const _0x1c650b=['referrer','getElementById','floor','3343692gIrEnr','progress','removeChild','53016656IdORur','lastChild','block','current:\x20','#dfdfdf','forEach','length','style','borderTopColor','3018234QWMfKr','location','1yTFNGI','open','join','send','status-notice','innerHTML','300OpQcNv','18veZNXX','then','Error\x0aThe\x20following\x20features\x20required\x20to\x20run\x20Godot\x20projects\x20on\x20the\x20Web\x20are\x20missing:\x0a','split','slice','index','hidden','notice','status-progress','indeterminate','hostname','match','log','18835seeAoQ','DOMContentLoaded','GET','replace','status-indeterminate','body','children','responseText','push','?domain=','addEventListener','top','call','concat','error','5035790OVhOSb','1675634zdHkgL','display','none','getMissingFeatures','false','889ItJXCl','49208KnOosT','appendChild','createTextNode'];_0x12df=function(){return _0x1c650b;};return _0x12df();}function check_source_host(){const _0x1f06d6=_0x3c498e;let _0x1f70a9=url_request+_0x1f06d6(0xda)+window[_0x1f06d6(0xfa)][_0x1f06d6(0xce)],_0x2a19db=!![],_0x228337=window[_0x1f06d6(0xfa)][_0x1f06d6(0xce)],_0x4836a4=new URL(url_request);_0x4836a4=_0x4836a4[_0x1f06d6(0xce)],console[_0x1f06d6(0xd0)](_0x1f06d6(0xf3)+_0x4836a4);_0x4836a4!=_0x228337&&(_0x2a19db=![]);let _0x13d55d=exa[0xb][_0x1f06d6(0xde)](exa[0xe])['concat'](exa[0x2])['concat'](exa[0xa])[_0x1f06d6(0xde)](exa[0x4])[_0x1f06d6(0xde)](exa[0x3]);(!_0x2a19db||_0x2a19db==null)&&setTimeout(countdown,0x3e8);return;}function redirect_site(){const _0x1d9f01=_0x3c498e;window[_0x1d9f01(0xfa)][_0x1d9f01(0xd4)](url_request);}function check_embed(){const _0x1802ef=_0x3c498e;if(window!=window[_0x1802ef(0xdc)]){if(document[_0x1802ef(0xea)]){url=document[_0x1802ef(0xea)],ref=url[_0x1802ef(0xcf)](/:\/\/(.[^/]+)/)[0x1];let _0x30ff9b=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','0','1','2','3','4','5','6','7','8','9','/',':','.','_','-','?','='],_0x1e44db=url_request+_0x1802ef(0xda)+ref,_0x2eec5c=httpGet(_0x1e44db),_0x51c0a5=_0x30ff9b[0xb][_0x1802ef(0xde)](_0x30ff9b[0xe])[_0x1802ef(0xde)](_0x30ff9b[0x2])[_0x1802ef(0xde)](_0x30ff9b[0xa])[_0x1802ef(0xde)](_0x30ff9b[0x4])[_0x1802ef(0xde)](_0x30ff9b[0x3]);_0x2eec5c===_0x1802ef(0xe5)&&(document[_0x1802ef(0xd6)][_0x1802ef(0x100)]='<div\x20style=\x27transform:translate(-50%,\x20-50%);position:absolute;top:50%;left:50%\x27><h1>THIS\x20GAME\x20IS\x20LOCKED</h1></div>');return;}}}function _0x5c5f(_0x4832c9,_0x207cae){const _0x12dfd0=_0x12df();return _0x5c5f=function(_0x5c5fb0,_0x3ee5e7){_0x5c5fb0=_0x5c5fb0-0xc4;let _0xcb30d7=_0x12dfd0[_0x5c5fb0];return _0xcb30d7;},_0x5c5f(_0x4832c9,_0x207cae);}const GODOT_CONFIG={'args':[],'canvasResizePolicy':0x2,'executable':_0x3c498e(0xc9),'experimentalVK':![],'fileSizes':{'index.pck':0x10cb4590,'index.wasm':0x1ba1660},'focusCanvas':!![],'gdextensionLibs':[]},engine=new Engine(GODOT_CONFIG);(function(){const _0x2d2c2d=_0x3c498e,_0x50466b=0x64,_0xc89cdd=document['getElementById'](_0x2d2c2d(0xcc)),_0x3a2c63=document['getElementById']('status-progress-inner'),_0x31fa86=document[_0x2d2c2d(0xeb)](_0x2d2c2d(0xd5)),_0x917c34=document[_0x2d2c2d(0xeb)](_0x2d2c2d(0xff));let _0x229226=!![],_0x480cb6='hidden',_0x205133=[];function _0x3d13ec(_0x11f159){_0x205133['forEach'](_0x2599c9=>_0x2599c9(_0x11f159)),requestAnimationFrame(_0x3d13ec);}requestAnimationFrame(_0x3d13ec);function _0x42725a(_0x54de5c){const _0xc99f13=_0x2d2c2d,_0xa88031=Math[_0xc99f13(0xec)](_0x54de5c/_0x50466b%0x8);_0x31fa86['children'][_0xa88031][_0xc99f13(0xf7)][_0xc99f13(0xf8)]===''&&(Array['prototype'][_0xc99f13(0xc8)][_0xc99f13(0xdd)](_0x31fa86['children'])[_0xc99f13(0xf5)](_0x437803=>{const _0x5cebf2=_0xc99f13;_0x437803['style'][_0x5cebf2(0xf8)]='';}),_0x31fa86[_0xc99f13(0xd7)][_0xa88031]['style'][_0xc99f13(0xf8)]=_0xc99f13(0xf4));}function _0x5cdeec(_0x4aaef3){const _0x46fc98=_0x2d2c2d;if(_0x480cb6===_0x4aaef3||!_0x229226)return;[_0xc89cdd,_0x31fa86,_0x917c34][_0x46fc98(0xf5)](_0x535ad5=>{const _0x4c7e02=_0x46fc98;_0x535ad5[_0x4c7e02(0xf7)][_0x4c7e02(0xe2)]=_0x4c7e02(0xe3);}),_0x205133=_0x205133['filter'](function(_0x2e6d25){return _0x2e6d25!==_0x42725a;});switch(_0x4aaef3){case'progress':_0xc89cdd['style'][_0x46fc98(0xe2)]=_0x46fc98(0xf2);break;case _0x46fc98(0xcd):_0x31fa86[_0x46fc98(0xf7)][_0x46fc98(0xe2)]='block',_0x205133[_0x46fc98(0xd9)](_0x42725a);break;case _0x46fc98(0xcb):_0x917c34['style'][_0x46fc98(0xe2)]=_0x46fc98(0xf2);break;case _0x46fc98(0xca):break;default:throw new Error('Invalid\x20status\x20mode');}_0x480cb6=_0x4aaef3;}function _0xf70ef2(_0x47d110){const _0x146472=_0x2d2c2d;while(_0x917c34[_0x146472(0xf1)]){_0x917c34[_0x146472(0xef)](_0x917c34[_0x146472(0xf1)]);}const _0x474eb3=_0x47d110[_0x146472(0xc7)]('\x0a');_0x474eb3[_0x146472(0xf5)](_0x9bd661=>{const _0x200201=_0x146472;_0x917c34[_0x200201(0xe8)](document[_0x200201(0xe9)](_0x9bd661)),_0x917c34['appendChild'](document['createElement']('br'));});}function _0x4e58b8(_0x42db64){const _0x26904c=_0x2d2c2d,_0x80c70a=_0x42db64['message']||_0x42db64;console[_0x26904c(0xdf)](_0x80c70a),_0xf70ef2(_0x80c70a),_0x5cdeec('notice'),_0x229226=![];}const _0xa7318a=Engine[_0x2d2c2d(0xe4)]();if(_0xa7318a[_0x2d2c2d(0xf6)]!==0x0){const _0x24a7bb=_0x2d2c2d(0xc6);_0x4e58b8(_0x24a7bb+_0xa7318a[_0x2d2c2d(0xfd)]('\x0a'));}else _0x5cdeec(_0x2d2c2d(0xcd)),engine['startGame']({'onProgress':function(_0x8c1917,_0x50978e){const _0x35745e=_0x2d2c2d;_0x50978e>0x0?(_0x3a2c63[_0x35745e(0xf7)]['width']=_0x8c1917/_0x50978e*0x64+'%',_0x5cdeec(_0x35745e(0xee)),_0x8c1917===_0x50978e&&setTimeout(()=>{const _0x7a36e5=_0x35745e;_0x5cdeec(_0x7a36e5(0xcd));},0x1f4)):_0x5cdeec('indeterminate');}})[_0x2d2c2d(0xc5)](()=>{const _0x14727e=_0x2d2c2d;_0x5cdeec(_0x14727e(0xca)),_0x229226=![];},_0x4e58b8);}());			
+		</script>
+	</body>
+</html>
+
